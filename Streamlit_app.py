@@ -60,13 +60,16 @@ def app():
     Department of Computer Science
     College of Information and Communications Technology
     West Visayas State University
-    
-    https://developers.googleblog.com/2024/04/gemini-15-pro-in-public-preview-with-new-features.html
-    https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform
     """
+
 
     with st.expander("Click to display developer information."):
         st.text(text)
+        link_text = "Click here to visit [Gemini 1.5 Pro](https://developers.googleblog.com/2024/04/gemini-15-pro-in-public-preview-with-new-features.html)"
+        st.write(link_text)
+        link_text = "Click here to visit [Gemini Vertex AI](https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform)"
+        st.write(link_text)
+
     st.subheader("Empower Your Teaching with AI: The Gemini Teacher Copilot")
     text = """Unleash creativity and personalize learning in your classroom with 
     the Gemini Teacher Copilot, a revolutionary data app powered by Google's 
