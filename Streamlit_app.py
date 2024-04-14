@@ -121,7 +121,7 @@ def app():
     # Button to generate response
     if st.button("Generate Response"):
         progress_bar = st.progress(0, text="The AI teacher co-pilot is processing the request, please wait...")
-        if question:
+        if topic:
 
             # Add user message to chat history
             chat_history.append({"speaker": "User", "message": context + " " + question})
