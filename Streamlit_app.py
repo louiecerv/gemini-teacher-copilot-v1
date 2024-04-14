@@ -33,7 +33,7 @@ def app():
 
 
     vertexai.init(project="learn-vertex-ai-417510", location="asia-southeast1")
-    
+
     model = GenerativeModel(
         #"gemini-1.0-pro-001",
         "gemini-1.5-pro-preview-0409",
@@ -119,7 +119,7 @@ def app():
         if question:
 
             # Add user message to chat history
-            chat_history.append({"speaker": "User", "message": question " " + contex})
+            chat_history.append({"speaker": "User", "message": + context + " " + question})
 
             # Generate response from Gemma
             bot_response = chat.send_message(question,
