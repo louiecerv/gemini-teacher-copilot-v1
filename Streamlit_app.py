@@ -63,14 +63,13 @@ def app():
 
     with st.expander("Click to display developer information."):
         st.text(text)
-
-    text = """## Empower Your Teaching with AI: The Gemini Teacher Copilot ##
-    This innovative data app, built with Streamlit, leverages the power of 
+    st.subheader("Empower Your Teaching with AI: The Gemini Teacher Copilot")
+    text = """This innovative data app, built with Streamlit, leverages the power of 
     Google's cutting-edge large language model, Gemini 1.5, on Vertex AI.  
     Designed to be your AI co-pilot in the classroom, this app provides 
     educators with a wealth of creative ideas and resources to enhance 
     their teaching practice.
-    
+
     **Here's what you can achieve with the Gemini Teacher Copilot:**
     * **Spark Engagement:** Overcome the "blank page" syndrome! Generate exciting and interactive learning activities tailored to your students' needs.
     * **Concept Clarity:** Struggling to explain a challenging concept? Get suggestions for alternative explanations to ensure all students grasp the material.
