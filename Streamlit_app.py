@@ -33,9 +33,9 @@ def app():
 
 
     vertexai.init(project="learn-vertex-ai-417510", location="asia-southeast1")
-    model = GenerativeModel(
-    #"gemini-1.0-pro-001",
-    "gemini-1.5-pro-preview-0409",
+        model = GenerativeModel(
+        #"gemini-1.0-pro-001",
+        "gemini-1.5-pro-preview-0409",
     )
 
     chat = model.start_chat()
@@ -59,6 +59,7 @@ def app():
     Department of Computer Science
     College of Information and Communications Technology
     West Visayas State University"""
+
     with st.expander("Click to display developer information."):
         st.text(text)
 
