@@ -64,22 +64,13 @@ def app():
     with st.expander("Click to display developer information."):
         st.text(text)
     st.subheader("Empower Your Teaching with AI: The Gemini Teacher Copilot")
-    text = """This innovative data app, built with Streamlit, leverages the power of 
-    Google's cutting-edge large language model, Gemini 1.5, on Vertex AI.  
-    Designed to be your AI co-pilot in the classroom, this app provides 
-    educators with a wealth of creative ideas and resources to enhance 
-    their teaching practice.
-    **Here's what you can achieve with the Gemini Teacher Copilot:**
-    * **Spark Engagement:** Overcome the "blank page" syndrome! Generate exciting and interactive learning activities tailored to your students' needs.
-    * **Concept Clarity:** Struggling to explain a challenging concept? Get suggestions for alternative explanations to ensure all students grasp the material.
-    * **Differentiation Made Easy:**  Provide personalized learning experiences! Receive differentiation strategies to cater to diverse learning styles and abilities.
-    * **Formative Assessment on Point:** Looking for creative ways to assess student understanding? Generate formative assessment ideas that effectively gauge learning progress.
-    * **Tech Integration Made Seamless:** Discover engaging and impactful ways to incorporate technology into your classroom curriculum.
-    **Benefits:**
-    * **Save Time:** Focus on your core strengths as a teacher, not lesson planning minutiae.
-    * **Boost Creativity:** Explore innovative new approaches to capture student interest.
-    * **Personalized Learning:** Cater to individual student needs and learning styles.
-    * **Effective Assessment:**  Gain valuable insights into student understanding."""
+    text = """Unleash creativity and personalize learning in your classroom with 
+    the Gemini Teacher Copilot, a revolutionary data app powered by Google's 
+    cutting-edge large language model, Gemini 1.5 on Vertex AI. This AI co-pilot 
+    equips educators with a treasure trove of ideas and resources to spark 
+    student engagement, tackle challenging concepts, differentiate instruction, 
+    design formative assessments, and seamlessly integrate technology into 
+    lessons, all while saving educators time and boosting their teaching potential."""
     st.write(text)
 
     context = """You are a teaching co-pilot designed to assist educators in various classroom tasks. 
