@@ -64,15 +64,24 @@ def app():
     with st.expander("Click to display developer information."):
         st.text(text)
 
-    text = """Empower your learning journey with an AI-powered teacher co-copilot!
-    \nThis innovative data app leverages the power of Streamlit and OpenAI's ChatGPT 
-    to create a one-of-a-kind educational experience. Imagine a chat interface where you can:
-    * Ask questions: Get clear and informative answers to your learning inquiries across various subjects.
-    * Practice concepts: Engage in interactive exercises and receive real-time feedback from your AI companion.
-    * Spark creativity: Brainstorm ideas, explore diverse perspectives, and unlock new approaches to problem-solving.
-    * Boost confidence: Receive personalized guidance and overcome learning roadblocks with the support of your AI coach.
-    \nStudents seeking an on-demand learning assistant Educators looking to enhance their teaching methods
-    Anyone curious to explore the potential of AI for learning"""
+    text = """## Empower Your Teaching with AI: The Gemini Teacher Copilot
+    This innovative data app, built with Streamlit, leverages the power of 
+    Google's cutting-edge large language model, Gemini 1.5, on Vertex AI.  
+    Designed to be your AI co-pilot in the classroom, this app provides 
+    educators with a wealth of creative ideas and resources to enhance 
+    their teaching practice.
+    **Here's what you can achieve with the Gemini Teacher Copilot:**
+    * **Spark Engagement:** Overcome the "blank page" syndrome! Generate exciting and interactive learning activities tailored to your students' needs.
+    * **Concept Clarity:** Struggling to explain a challenging concept? Get suggestions for alternative explanations to ensure all students grasp the material.
+    * **Differentiation Made Easy:**  Provide personalized learning experiences! Receive differentiation strategies to cater to diverse learning styles and abilities.
+    * **Formative Assessment on Point:** Looking for creative ways to assess student understanding? Generate formative assessment ideas that effectively gauge learning progress.
+    * **Tech Integration Made Seamless:** Discover engaging and impactful ways to incorporate technology into your classroom curriculum.
+    **Benefits:**
+
+    * **Save Time:** Focus on your core strengths as a teacher, not lesson planning minutiae.
+    * **Boost Creativity:** Explore innovative new approaches to capture student interest.
+    * **Personalized Learning:** Cater to individual student needs and learning styles.
+    * **Effective Assessment:**  Gain valuable insights into student understanding."""
     st.write(text)
 
     context = """You are a teaching co-pilot designed to assist educators in various classroom tasks. 
