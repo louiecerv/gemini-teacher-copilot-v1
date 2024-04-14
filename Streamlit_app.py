@@ -142,18 +142,20 @@ def app():
             for message in chat_history:
                 st.write(f"{message['speaker']}: {message['message']}")
 
+            # update the progress bar
+            for i in range(100):
+                # Update progress bar value
+                progress_bar.progress(i + 1)
+                # Simulate some time-consuming task (e.g., sleep)
+                time.sleep(0.01)
+            # Progress bar reaches 100% after the loop completes
+            st.success("AI teacher co-pilot task completed!") 
+
+
         else:
             st.error("Please enter a prompt.")
 
-        # update the progress bar
-        for i in range(100):
-            # Update progress bar value
-            progress_bar.progress(i + 1)
-            # Simulate some time-consuming task (e.g., sleep)
-            time.sleep(0.01)
-        # Progress bar reaches 100% after the loop completes
-        st.success("AI teacher co-pilot task completed!") 
-
+ 
 
 #run the app
 if __name__ == "__main__":
