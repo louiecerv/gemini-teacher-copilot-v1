@@ -119,7 +119,7 @@ def app():
         if question:
 
             # Add user message to chat history
-            chat_history.append({"speaker": "User", "message": + context + " " + question})
+            chat_history.append({"speaker": "User", "message": context + " " + question})
 
             # Generate response from Gemma
             bot_response = chat.send_message(question,
