@@ -69,7 +69,6 @@ def app():
     Designed to be your AI co-pilot in the classroom, this app provides 
     educators with a wealth of creative ideas and resources to enhance 
     their teaching practice.
-
     **Here's what you can achieve with the Gemini Teacher Copilot:**
     * **Spark Engagement:** Overcome the "blank page" syndrome! Generate exciting and interactive learning activities tailored to your students' needs.
     * **Concept Clarity:** Struggling to explain a challenging concept? Get suggestions for alternative explanations to ensure all students grasp the material.
@@ -77,7 +76,6 @@ def app():
     * **Formative Assessment on Point:** Looking for creative ways to assess student understanding? Generate formative assessment ideas that effectively gauge learning progress.
     * **Tech Integration Made Seamless:** Discover engaging and impactful ways to incorporate technology into your classroom curriculum.
     **Benefits:**
-
     * **Save Time:** Focus on your core strengths as a teacher, not lesson planning minutiae.
     * **Boost Creativity:** Explore innovative new approaches to capture student interest.
     * **Personalized Learning:** Cater to individual student needs and learning styles.
