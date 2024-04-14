@@ -59,7 +59,11 @@ def app():
     CCS 229 - Intelligent Systems
     Department of Computer Science
     College of Information and Communications Technology
-    West Visayas State University"""
+    West Visayas State University
+    
+    https://developers.googleblog.com/2024/04/gemini-15-pro-in-public-preview-with-new-features.html
+    https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform
+    """
 
     with st.expander("Click to display developer information."):
         st.text(text)
