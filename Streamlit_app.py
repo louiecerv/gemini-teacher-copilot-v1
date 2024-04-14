@@ -60,7 +60,7 @@ def app():
     College of Information and Communications Technology
     West Visayas State University"""
     with st.expander("Click to display developer information."):
-    st.text(text)
+        st.text(text)
 
     text = """Empower your learning journey with an AI-powered teacher co-copilot!
     \nThis innovative data app leverages the power of Streamlit and OpenAI's ChatGPT 
