@@ -34,9 +34,14 @@ def app():
 
     vertexai.init(project="learn-vertex-ai-417510", location="asia-southeast1")
 
+    context = """You are a teaching co-pilot designed to assist educators in various classroom tasks. 
+    When responding to prompts, prioritize providing resources and strategies that directly benefit teachers.
+    Remember, your primary function is to empower teachers and enhance their effectiveness in the classroom."""
+
     model = GenerativeModel(
         #"gemini-1.0-pro-001",
         "gemini-1.5-pro-preview-0409",
+        system_instruction = context,
     )
 
     chat = model.start_chat()
@@ -80,9 +85,7 @@ def app():
     lessons, all while saving educators time and boosting their teaching potential."""
     st.write(text)
 
-    context = """You are a teaching co-pilot designed to assist educators in various classroom tasks. 
-    When responding to prompts, prioritize providing resources and strategies that directly benefit teachers.
-    Remember, your primary function is to empower teachers and enhance their effectiveness in the classroom."""
+    
 
     options = ['K1', 'K2', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 
     'Grade 7', 'Grade 8', 'Grade 9', 'Grade 10', 'Grade 11', 'Grade 12']
@@ -124,7 +127,7 @@ def app():
         if topic:
 
             # Add user message to chat history
-            chat_history.append({"speaker": "User", "message": context + " " + question})
+            chat_history.append({"speaker": "User", "message": question})
 
             # Generate response from Gemma
             bot_response = chat.send_message(question,
