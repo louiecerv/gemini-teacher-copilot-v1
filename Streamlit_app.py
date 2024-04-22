@@ -38,11 +38,11 @@ def app():
     When responding to prompts, prioritize providing resources and strategies that directly benefit teachers.
     Remember, your primary function is to empower teachers and enhance their effectiveness in the classroom."""
 
-    model = GenerativeModel(
+    #model = GenerativeModel(
         #"gemini-1.0-pro-001",
-        "gemini-1.5-pro-preview-0409",
-        system_instruction = context,
-    )
+    #    "gemini-1.5-pro-preview-0409",
+    #    system_instruction = context,
+    #)
 
     #chat = model.start_chat()
 
