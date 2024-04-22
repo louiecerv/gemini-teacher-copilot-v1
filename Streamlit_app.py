@@ -66,8 +66,6 @@ def app():
     College of Information and Communications Technology
     West Visayas State University
     """
-    st.write("Notice:  This app is temporarily disabled to fix security issues. Sorry for the inconvenience.")
-
 
     with st.expander("Click to display developer information."):
         st.text(text)
@@ -75,6 +73,11 @@ def app():
         st.write(link_text)
         link_text = "Click here to visit [Gemini Vertex AI](https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform)"
         st.write(link_text)
+
+    text = """IMPORTANT NOTICE:  This app is temporarily disabled. We have used up the 
+    free token allocation on Google Cloud.  We are working to migrate the service to 
+    another platform. Sorry for the inconvenience."""
+    st.write(text)
 
     st.subheader("Empower Your Teaching with AI: The Gemini Teacher Copilot")
     text = """Unleash creativity and personalize learning in your classroom with 
