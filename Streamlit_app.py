@@ -23,16 +23,16 @@ safety_settings = {
 
 def app():
 
-    key_path = st.secrets["google_key_path"]
+    #key_path = st.secrets["google_key_path"]
 
     # Set the environment variable to point to the key file
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
+    #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_path
 
     # Authenticate using the key file
-    credentials, project_id = google.auth.default()
+    #credentials, project_id = google.auth.default()
 
 
-    vertexai.init(project="learn-vertex-ai-417510", location="asia-southeast1")
+    #vertexai.init(project="learn-vertex-ai-417510", location="asia-southeast1")
 
     context = """You are a teaching co-pilot designed to assist educators in various classroom tasks. 
     When responding to prompts, prioritize providing resources and strategies that directly benefit teachers.
@@ -44,7 +44,7 @@ def app():
         system_instruction = context,
     )
 
-    chat = model.start_chat()
+    #chat = model.start_chat()
 
     # Initialize chat history
     chat_history = []
@@ -124,6 +124,9 @@ def app():
 
     # Button to generate response
     if st.button("Generate Response"):
+        st.error("This app is temporarily disabled to fix security issues. Sorry for the inconvenience.")
+        return
+    
         progress_bar = st.progress(0, text="The AI teacher co-pilot is processing the request, please wait...")
         if topic:
 
