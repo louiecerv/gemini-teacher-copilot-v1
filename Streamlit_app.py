@@ -66,6 +66,7 @@ def app():
     College of Information and Communications Technology
     West Visayas State University
     """
+    st.write("Notice:  This app is temporarily disabled to fix security issues. Sorry for the inconvenience.")
 
 
     with st.expander("Click to display developer information."):
