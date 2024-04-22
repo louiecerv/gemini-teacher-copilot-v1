@@ -74,10 +74,10 @@ def app():
         link_text = "Click here to visit [Gemini Vertex AI](https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform)"
         st.write(link_text)
 
-    text = """IMPORTANT NOTICE:  This app is temporarily disabled. We have used up the 
+    notice = """IMPORTANT NOTICE:  This app is temporarily disabled. We have used up the 
     free token allocation on Google Cloud.  We are working to migrate the service to 
     another platform. Sorry for the inconvenience."""
-    st.write(text)
+    st.write(notice)
 
     st.subheader("Empower Your Teaching with AI: The Gemini Teacher Copilot")
     text = """Unleash creativity and personalize learning in your classroom with 
@@ -127,7 +127,7 @@ def app():
 
     # Button to generate response
     if st.button("Generate Response"):
-        st.error("This app is temporarily disabled to fix security issues. Sorry for the inconvenience.")
+        st.error(notice)
         return
     
         progress_bar = st.progress(0, text="The AI teacher co-pilot is processing the request, please wait...")
